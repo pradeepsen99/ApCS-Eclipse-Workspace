@@ -1,0 +1,51 @@
+import java.awt.Color;
+import java.awt.Graphics;
+import java.util.Timer;
+import java.util.TimerTask;
+
+import javax.swing.JFrame; 
+import javax.swing.JPanel;
+//import javax.swing.JLabel; 
+
+
+public class MainClass extends JFrame{
+
+	int y[] = new int[20];
+	//int y[] = new int[20];
+	static Timer tme1 = new Timer();
+	public static void main(String[] args) {
+		
+		MainClass clas = new MainClass();
+		clas.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		clas.setSize(1300, 700);
+		clas.setVisible(true);
+		
+		
+		tme1.schedule(new TimerTask() {
+			 public void run() {
+				 MainClass clas = new MainClass();
+				 clas.repaint();
+			  }
+			}, 10);
+		
+		
+	}
+			
+	public MainClass(){
+		
+		super("Title");
+		JPanel pane = (JPanel)getContentPane();
+	}
+	
+	public void paint(Graphics g){
+		
+			
+		for (int i=0; i<20; i++){
+			g.setColor(Color.RED);
+			y[i] = (int)(Math.random()* 1300 ) + 1;;
+			g.fillRect(y[i],35, 30, 30);
+			
+		}
+	}
+
+}

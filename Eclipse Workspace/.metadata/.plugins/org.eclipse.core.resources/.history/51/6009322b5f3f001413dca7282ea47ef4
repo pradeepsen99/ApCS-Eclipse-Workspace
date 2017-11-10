@@ -1,0 +1,14 @@
+
+public class FORMATTING_patterns {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int y = 973231232132;
+		System.out.println(String.format("%c",y));
+
+	}
+
+}

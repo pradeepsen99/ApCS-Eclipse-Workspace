@@ -1,0 +1,21 @@
+
+public class Misc {
+
+	public static void main(String[] args) {
+		
+		  int x = 3; 
+		    int y = x / 2; 
+		     
+		    if ( x > 0 && y > 2 ) 
+		      System.out.println( "A" ); 
+		    else if ( x > 0 && y > 1 ) 
+		      System.out.println( "B" ); 
+		    else if ( x > 0 && y > 0 ) 
+		      System.out.println( "C" ); 
+		    else if ( x == 3 ) 
+		      System.out.println( "D" ); 
+		    else 
+		      System.out.println( "E" );
+	}
+	
+}

@@ -1,0 +1,17 @@
+
+public class Misc {
+
+	public static void main(String[] args) {
+		
+		double[] w = new double[ 4 ]; 
+
+	    w[ 0 ] = 5.0; 
+	    w[ 1 ] = (2 * w[ 0 ]); 
+	    w[ 2 ] = (2 * w[ 1 ]); 
+	    w[ 3 ] = (2 * w[ 2 ]); 
+
+	    System.out.println( w[ 2 ] + w[ 3 ] );
+
+	}
+	
+}

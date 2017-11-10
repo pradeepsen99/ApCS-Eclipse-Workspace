@@ -1,0 +1,51 @@
+//© A+ Computer Science  -  www.apluscompsci.com
+//Name -
+//Date -
+//Class - 
+//Lab  -
+
+import java.util.Scanner;
+import static java.lang.System.*;
+
+public class LineCounter
+{
+   private String line;
+
+   public LineCounter()
+   {
+		setLine("");
+   }
+
+   public LineCounter(String s)
+   {
+	   line = s;
+   }
+
+	public void setLine(String s)
+	{
+		line = s;
+	}
+
+	public int getCount()
+	{
+		Scanner line2 = new Scanner(line);
+		int count=0;	
+		
+		while(line2.hasNextInt()){
+			count+=1;
+		}
+		return count;
+	}
+
+	public String getLine()
+	{
+		String bleh = "";
+		bleh = line;
+		return bleh;
+	}
+
+	public String toString()
+	{
+		return getLine() +"\n" + "Count = "+getCount()+"\n\n\n\n";
+	}
+}

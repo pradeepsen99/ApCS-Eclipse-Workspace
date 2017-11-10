@@ -1,0 +1,19 @@
+
+public class Misc {
+
+	public static void main(String[] args) {
+		
+		 int[] b = { 5, 4, 3, 2, 1 }; 
+		    int t = 3; 
+
+		    b[ t ] = b[ t - 1 ]; 
+		    b[ t + 1 ] = b[ t ] - 1; 
+		   
+		    int y = b[ 4 ]; 
+		    int x = b[ y - 1 ] + 1; 
+		    
+		    System.out.println(x);
+
+	}
+	
+}

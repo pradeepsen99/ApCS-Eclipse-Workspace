@@ -1,0 +1,27 @@
+
+public class Misc {
+
+	public static void main(String[] args) {
+		
+		 int x; 
+
+		    x = 5; 
+
+		    if ( x > 0 )  
+		    { 
+		      int x; 
+
+		      x = 10; 
+		    } 
+		    else  
+		    { 
+		      int y; 
+		   
+		      y = 9; 
+		      x += y;  
+		    }
+	    
+	    System.out.println(x);
+	}
+	
+}

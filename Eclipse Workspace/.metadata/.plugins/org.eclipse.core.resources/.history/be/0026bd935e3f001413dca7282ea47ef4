@@ -1,0 +1,16 @@
+
+public class FORMATTING_patterns {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double dec = 5.3423;
+		System.out.println(String.format("%.3fx",dec));
+		System.out.println(String.format("%12.3f",dec));
+		System.out.println(String.format("%-117.3f",dec));
+
+	}
+
+}

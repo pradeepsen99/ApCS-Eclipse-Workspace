@@ -1,0 +1,15 @@
+
+public class Misc {
+
+	public static void main(String[] args) {
+		int d = 0;
+		String list = "";
+		do{
+		if(d%2==0)
+			list = d+" " + list;
+		d++;
+	}while (d<12);
+	System.out.println(list);
+	}
+	
+}
